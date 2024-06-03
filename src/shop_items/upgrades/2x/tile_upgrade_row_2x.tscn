@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scripts/shop_upgrade_row.gd" type="Script" id=1]
+[ext_resource path="res://textures/bg/gold_bg.tres" type="Texture" id=2]
+
+[node name="Control" type="Sprite"]
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
+amt = 2
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -32.0
+margin_top = 2.0
+margin_right = -32.0
+margin_bottom = -93.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Upgrade
+Row"
+align = 1
+
+[node name="Button" type="Button" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -30.0
+margin_top = 41.0
+margin_right = -35.0
+margin_bottom = -67.0
+text = "Choose"
+
+[node name="row_counter" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -32.0
+margin_top = -18.0
+margin_right = -31.0
+margin_bottom = -129.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "x2 > x4"
+align = 1
+valign = 1
+
+[node name="row_id" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -32.0
+margin_top = -64.0
+margin_right = -64.0
+margin_bottom = -171.0
+rect_scale = Vector2( 2, 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "5"
+align = 1
+valign = 1
